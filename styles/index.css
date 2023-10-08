@@ -34,6 +34,20 @@ main p {
   margin-bottom: 130px;
 }
 
+.waviy span {
+  position: relative;
+  display: inline-block;
+  animation: flip 3.7s infinite;
+  animation-delay: calc(0.2s * var(--i));
+}
+
+@keyframes flip {
+  0%,
+  80% {
+    transform: rotateY(360deg);
+  }
+}
+
 main ul.pages {
   display: flex;
   list-style-type: none;
