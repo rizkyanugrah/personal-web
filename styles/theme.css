@@ -1,9 +1,9 @@
 :root {
-  --text-color: #8A8A8A;
+  --text-color: #8a8a8a;
   --text-color-hovered: #dcdcdc;
   --border-color: #242424;
   --background-color: #161616;
-  --card-color: #1A1A1A;
+  --card-color: #1a1a1a;
 }
 
 ::selection {
@@ -68,7 +68,7 @@ body * {
 .navbar .navbar-mailme a i {
   margin-right: 10px;
   font-size: 24px;
-  color: var(--text-color)
+  color: var(--text-color);
 }
 
 .navbar .navbar-mailme a span {
@@ -84,7 +84,7 @@ body * {
 }
 
 .navbar .navbar-menu ul li:not(:last-child)::after {
-  content: '/';
+  content: "/";
   margin-left: 10px;
   color: var(--text-color);
 }
@@ -127,7 +127,7 @@ footer ul li:not(:last-child) {
 }
 
 footer ul li:not(:last-child)::after {
-  content: '/';
+  content: "/";
   margin-left: 10px;
   color: var(--text-color);
 }
