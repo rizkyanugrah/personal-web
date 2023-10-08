@@ -50,8 +50,8 @@
     <!-- Main -->
     <main>
       <div class="portfolios">
-        <div class="card">
-          <img src="../assets/portfolio/rental-mobil.png" class="card-img" alt="Dinas Pertanian Kutari Barat">
+        <div class="card" onclick="openModal(this)">
+          <img src="../assets/portfolio/rental-mobil.png" class="card-img" alt="Rental Mobile Website">
           <h2 class="card-title">
             Rental Mobile Website
           </h2>
@@ -60,8 +60,8 @@
             jenis mobil dengan berbagai pilihan dan fasilitas yang sesuai kebutuhan mereka.
           </p>
         </div>
-        <div class="card">
-          <img src="../assets/portfolio/bmi-calculator.png" class="card-img" alt="CasualChase">
+        <div class="card" onclick="openModal(this)">
+          <img src="../assets/portfolio/bmi-calculator.png" class="card-img" alt="BMI-Calculator">
           <h2 class="card-title">
             BMI-Calculator
           </h2>
@@ -70,8 +70,8 @@
             tinggi tubuh. Ini membantu Anda menentukan apakah berat badan Anda ideal, berlebihan, atau kurang.
           </p>
         </div>
-        <div class="card">
-          <img src="../assets/portfolio/pln-ppob.png" class="card-img" alt="Citra99">
+        <div class="card" onclick="openModal(this)">
+          <img src="../assets/portfolio/pln-ppob.png" class="card-img" alt="PLN-PPOB">
           <h2 class="card-title">
             PLN-PPOB
           </h2>
@@ -82,6 +82,17 @@
         </div>
       </div>
     </main>
+
+    <!-- Modal for image -->
+    <div id="myModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <span class="prev" onclick="prevImage()">&#10094;</span>
+      <img src="" id="modalImg" class="modal-content">
+      <span class="next" onclick="nextImage()">&#10095;</span>
+    </div>
+    <!-- End Modal for image -->
+
+    <script src="../scripts/portfolio.js"></script>
     <!-- End Main -->
   </div>
 
